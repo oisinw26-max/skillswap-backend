@@ -1,0 +1,80 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
+
+4. Save it
+
+#### File 3: `.env.example`
+1. Create another new text file
+2. Name it: `.env.example`
+3. Paste this:
+```
+PORT=3001
+NODE_ENV=production
+DATABASE_URL=your_database_url_here
+REDIS_URL=your_redis_url_here
+JWT_SECRET=your_jwt_secret_here
+JWT_REFRESH_SECRET=your_refresh_secret_here
+STRIPE_SECRET_KEY=your_stripe_key_here
+FRONTEND_URL=http://localhost:3000
+```
+
+4. Save it
+
+#### File 4: `schema.sql`
+1. Create another new text file
+2. Name it: `schema.sql`
+3. Go back to my "Backend Setup Instructions" artifact
+4. Copy ALL the SQL code (the CREATE TABLE stuff)
+5. Paste it into `schema.sql`
+6. Save it
+
+---
+
+## 🚀 Now Upload to GitHub:
+
+### Back to GitHub website:
+
+1. On your repository page, look for a button that says **"Add file"**
+2. Click the little arrow next to it ▼
+3. Click **"Upload files"**
+
+### You should see a page with:
+- A big box that says "Drag files here or choose your files"
+- A "Commit changes" button at the bottom
+
+### Upload Your Files:
+
+**Option A: Drag and Drop (easiest)**
+1. Open your `skillswap-backend` folder on your computer
+2. Select ALL the files (package.json, tsconfig.json, etc.)
+3. Drag them into the GitHub page
+4. Wait for them to upload (you'll see a progress bar)
+
+**Option B: Click to Upload**
+1. Click "choose your files"
+2. Navigate to your `skillswap-backend` folder
+3. Select all files
+4. Click "Open"
+
+### Commit (Save) the Files:
+
+At the bottom of the page:
+
+1. In the box that says "Add files via upload", type:
+```
+   Add initial backend files
